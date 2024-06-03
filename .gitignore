@@ -1,0 +1,34 @@
+# Client
+client/node_modules
+client/.env
+
+# Gateway
+gateway/node_modules
+gateway/.env.development
+gateway/.env.test
+gateway/.env.production
+gateway/logs/*
+
+
+# Service - user
+services/a1-user-service/node_modules
+services/a1-user-service/.env.development
+services/a1-user-service/.env.test
+services/a1-user-service/.env.production
+services/a1-user-service/logs/*
+
+
+# Service - auth
+services/b1-auth-service/node_modules
+services/b1-auth-service/.env.development
+services/b1-auth-service/.env.test
+services/b1-auth-service/.env.production
+services/b1-auth-service/logs/*
+
+
+# Service - product
+services/c1-product-service/node_modules
+services/c1-product-service/.env.development
+services/c1-product-service/.env.test
+services/c1-product-service/.env.production
+services/c1-product-service/logs/*

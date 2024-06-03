@@ -1,0 +1,38 @@
+.container {
+    padding: 20px;
+}
+
+.wrapper {
+    width: 70%;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 20px 0; */
+}
+h2 {
+    margin: 0;
+    padding: 0;
+}
+.link {
+    text-decoration: none;
+}
+
+.btn {
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 10px;
+    background-color: #4caf50;
+    border: 1px solid #4caf50;
+    outline: none;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+.table {
+    width: 100%;
+}

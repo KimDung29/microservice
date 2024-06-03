@@ -1,0 +1,27 @@
+.container {
+    padding: 20px 50px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper {
+    padding: 0 20px;
+}
+
+.btn {
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 10px;
+    background-color: #4caf50;
+    border: 1px solid #4caf50;
+    outline: none;
+    border-radius: 5px;
+}
+.content {
+    margin: 40px 0;
+}

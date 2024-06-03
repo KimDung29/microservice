@@ -1,0 +1,94 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form_validate {
+    width: 50%;
+    margin: 30px auto;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+form {
+    padding: 15px 0;
+}
+h1 {
+    text-align: center;
+}
+
+.inputContainer {
+    margin-bottom: 20px;
+}
+.error-message {
+    display: none;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: 1px solid #ccc;
+}
+
+input:focus {
+    border: 1px solid #4caf50;
+}
+input:invalid[data-focus="true"] ~ .error-message {
+    display: block;
+    color: rgb(255, 58, 58);
+    margin-top: 5px;
+}
+input:invalid[data-focus="true"] {
+    border: 1px solid red;
+}
+
+.showHide {
+    position: relative;
+}
+
+.btnShowHide {
+    background-color: #4caf50;
+    color: white;
+    padding: 9px 8px;
+    margin-right: -5px;
+    border-radius: 5px;
+    border: 1px solid #4caf50;
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 8px;
+    width: 40px;
+    text-align: center;
+}
+
+.checkboxLabel input {
+    margin-right: 5px;
+    width: 8%;
+    outline: none;
+}
+
+.submit {
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.linkToRegister {
+    text-align: center;
+    display: block;
+    color: #4caf50;
+}
