@@ -1,9 +1,6 @@
 const axios = require("axios");
 const createError = require("../utils/createError");
-const {
-    NODE_ENV,
-    auth_url,
-} = require("../config/env-config");
+const { NODE_ENV, auth_url } = require("../config/env-config");
 
 const register = async (req, res) => {
     try {
@@ -30,7 +27,6 @@ const login = async (req, res) => {
             email,
             password,
         });
-        console.log({ response });
         if (response.data.status) {
             res.status(200).send({
                 status: 401,

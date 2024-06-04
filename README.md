@@ -30,7 +30,7 @@ npm i
 npm run dev
 ```
 
--Step 4: Set up the gateway and create database, migration, and seeding for the microservices.
+- Step 4: Set up the gateway and create database, migration, and seeding for the microservices.
 
 ```
 cd gateway

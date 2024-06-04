@@ -15,7 +15,9 @@ const { logger } = require("../logs");
 const register = async (req, res) => {
     try {
         const { first_name, last_name, email, password, isAdmin } = req.body;
-        const existenceCheck = await axios.post(user_url.existenceCheck, { email });
+        const existenceCheck = await axios.post(user_url.existenceCheck, {
+            email,
+        });
 
         if (existenceCheck.data.status === 201) {
             return res
@@ -71,7 +73,9 @@ const createToken = (user, SECRET_KEY, expiresIn) => {
 const login = async (req, res) => {
     try {
         const { email, password } = req.body;
-        const existenceCheck = await axios.post(user_url.existenceCheck, { email });
+        const existenceCheck = await axios.post(user_url.existenceCheck, {
+            email,
+        });
 
         if (existenceCheck.data.status === 404) {
             return res
@@ -92,7 +96,7 @@ const login = async (req, res) => {
         let refreshToken;
         if (!isExisted) {
             logger.error("The token doesnt exist");
-            refreshToken = createToken(user, REFRESH_TOKEN_SECRET);
+            refreshToken = createToken(user, REFRESH_TOKEN_SECRET, "7d");
             await createRefreshTokenService(user.id, refreshToken);
         } else {
             refreshToken = isExisted.value;

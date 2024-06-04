@@ -26,9 +26,7 @@ const existenceCheck = async (req, res) => {
 
 const create = async (req, res) => {
     try {
-        const { firstName, lastName, email } = req.body;
-
-        const response = await createService({ firstName, lastName, email });
+        const response = await createService(req.body);
         if (!response) {
             res.status(200).send({
                 status: 409,
